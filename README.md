@@ -11,7 +11,7 @@ npx tracelight
 ```
 
 <!-- Screenshot/GIF placeholders — record these and commit to docs/ before publishing. Run `node dist/cli.js` to open the app for capture. -->
-![tracelight trace view](docs/trace-view.gif)
+<!-- GIF placeholder, uncomment once recorded: ![tracelight trace view](docs/trace-view.gif) -->
 <!-- docs/trace-view.gif: a screen capture of the trace view scrolling through a real session with tool calls and a diff visible -->
 
 ---
