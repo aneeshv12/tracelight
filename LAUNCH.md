@@ -15,7 +15,7 @@ tracelight is a small Node CLI that reads those files and serves a local web UI.
 Everything runs locally. Nothing leaves your machine. There's no API key and no per-use cost. Cost figures are estimates from a hand-maintained pricing table (verified as of 2026-06-13 against Anthropic's public prices — check anthropic.com/pricing for current rates). The transcript format is undocumented, so the parser is written defensively: unrecognized line types surface in the UI rather than silently dropping.
 
 ```
-npx @aneeshv12/tracelight
+npx tracelight
 ```
 
 Source: https://github.com/aneeshv12/tracelight
@@ -26,4 +26,4 @@ Source: https://github.com/aneeshv12/tracelight
 
 Your Claude Code sessions are logged as JSONL in ~/.claude/projects/ — and go almost entirely unread. tracelight turns them into a local web UI: traces, diffs, subagent timelines, cost estimates. Nothing leaves your machine.
 
-npx @aneeshv12/tracelight
+npx tracelight

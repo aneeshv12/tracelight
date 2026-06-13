@@ -1,5 +1,5 @@
 {
-  "name": "@aneeshv12/tracelight",
+  "name": "tracelight",
   "version": "0.1.0",
   "description": "Local-first web viewer for Claude Code session transcripts — run npx tracelight in any directory",
   "keywords": [

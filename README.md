@@ -7,7 +7,7 @@ Your AI coding sessions are quietly saved to your laptop and never looked at aga
 One command. Runs on your machine. Nothing leaves it.
 
 ```bash
-npx @aneeshv12/tracelight
+npx tracelight
 ```
 
 <!-- Screenshot/GIF placeholders — record these and commit to docs/ before publishing. Run `node dist/cli.js` to open the app for capture. -->
@@ -36,14 +36,14 @@ No account. No API key. No upload. tracelight reads the files already on your di
 ## Get started in 30 seconds
 
 ```bash
-npx @aneeshv12/tracelight
+npx tracelight
 ```
 
 That's it. tracelight finds your sessions, starts a local server, and opens your browser automatically.
 
 ```bash
-npx @aneeshv12/tracelight --port 4000   # pick a specific port
-npx @aneeshv12/tracelight --no-open     # start without opening the browser
+npx tracelight --port 4000   # pick a specific port
+npx tracelight --no-open     # start without opening the browser
 ```
 
 Requires Node 18+. (Works with the standard Claude Code session folder at `~/.claude/projects/`.)
