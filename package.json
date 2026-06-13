@@ -1,0 +1,70 @@
+{
+  "name": "@aneeshv12/tracelight",
+  "version": "0.1.0",
+  "description": "Local-first web viewer for Claude Code session transcripts — run npx tracelight in any directory",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "transcript",
+    "viewer",
+    "agent",
+    "observability",
+    "cli"
+  ],
+  "author": "Aneesh Venuturumilli",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aneeshv12/tracelight.git"
+  },
+  "homepage": "https://github.com/aneeshv12/tracelight#readme",
+  "bugs": {
+    "url": "https://github.com/aneeshv12/tracelight/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "ui/dist",
+    "!dist/**/__tests__"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit && tsc --noEmit -p ui/tsconfig.json",
+    "test": "vitest run",
+    "build": "tsc --outDir dist && npm run build:ui",
+    "build:server": "tsc --outDir dist",
+    "build:ui": "vite build",
+    "dev:ui": "vite",
+    "start": "node dist/cli.js",
+    "summarize": "tsx src/scripts/summarize.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "tracelight": "./dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/diff": "^7.0.2",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.19",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.4",
+    "typescript": "^5.5.0",
+    "vite": "^5.4.21",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "@fastify/static": "^9.1.3",
+    "diff": "^9.0.0",
+    "fastify": "^5.8.5",
+    "open": "^11.0.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}
